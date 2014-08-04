@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.trollalarm.app.EditAlarmActivity" >
+
+    <item android:id="@+id/action_save"
+        android:title="@string/action_save"
+        android:orderInCategory="100"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/action_changePhoto"
+        android:title="Change Photo"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+</menu>

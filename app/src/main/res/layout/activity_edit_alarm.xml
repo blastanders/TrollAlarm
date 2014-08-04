@@ -1,0 +1,291 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.trollalarm.app.EditAlarmActivity"
+    android:background="#122129">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Day"
+        android:id="@+id/daysLabelText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="5dp"
+        android:textColor="#ffffff" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="15dp"
+        android:id="@+id/delimiter_day"
+        android:layout_below="@+id/daysLabelText"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/blue_delimiter"
+        android:scaleType="fitXY" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/delimiter_day"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/layout_days"
+        android:focusableInTouchMode="false">
+
+        <ToggleButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="S"
+            android:textOff="S"
+            android:textOn="S"
+            android:layout_below="@+id/delimiter_day"
+            android:id="@+id/toggle_main_sun"
+            android:layout_gravity="center"
+            android:checked="false"
+            android:textColor="@android:color/holo_red_light"/>
+
+        <ToggleButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="M"
+            android:textOff="M"
+            android:textOn="M"
+            android:id="@+id/toggle_main_mon"
+            android:layout_gravity="center"
+            android:layout_below="@+id/delimiter_day"
+            android:layout_toRightOf="@+id/toggle_main_sun"
+            android:textColor="#ffffff"
+            android:checked="false"/>
+
+        <ToggleButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="T"
+            android:textOff="T"
+            android:textOn="T"
+            android:id="@+id/toggle_main_tue"
+            android:layout_gravity="center"
+            android:layout_below="@+id/delimiter_day"
+            android:layout_toRightOf="@+id/toggle_main_mon"
+            android:textColor="#ffffff"
+            android:checked="false" />
+
+        <ToggleButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="W"
+            android:textOff="W"
+            android:textOn="W"
+            android:id="@+id/toggle_main_wed"
+            android:layout_gravity="center"
+            android:checked="false"
+            android:layout_below="@+id/delimiter_day"
+            android:textColor="#ffffff"
+            android:layout_toRightOf="@+id/toggle_main_tue"/>
+
+        <ToggleButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="T"
+            android:textOff="T"
+            android:textOn="T"
+            android:id="@+id/toggle_main_thu"
+            android:layout_below="@+id/delimiter_day"
+            android:layout_toRightOf="@+id/toggle_main_wed"
+            android:textColor="#ffffff"
+            android:layout_gravity="center"
+            android:checked="false"/>
+
+        <ToggleButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="F"
+            android:textOff="F"
+            android:textOn="F"
+            android:id="@+id/toggle_main_fri"
+            android:layout_below="@+id/delimiter_day"
+            android:layout_toRightOf="@+id/toggle_main_thu"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:checked="false"/>
+
+        <ToggleButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="S"
+            android:textOff="S"
+            android:textOn="S"
+            android:id="@+id/toggle_main_sat"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/delimiter_day"
+            android:layout_toRightOf="@+id/toggle_main_fri"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentEnd="false"
+            android:layout_gravity="center"
+            android:checked="false"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Method"
+        android:id="@+id/labeltext_method"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="32dp"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/layout_days" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="15dp"
+        android:layout_below="@id/labeltext_method"
+        android:id="@+id/delimiter_method"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/blue_delimiter"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Method name"
+        android:id="@+id/text_main_methodname"
+        android:layout_below="@id/delimiter_method"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:onClick="chooseMethod"
+        android:textColor="#ffffff"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+        android:layout_alignTop="@id/text_main_methodname"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/white_arrow"
+        android:onClick="chooseMethod"
+        android:clickable="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description~~~"
+        android:id="@+id/text_main_methoddesc"
+        android:layout_below="@id/text_main_methodname"
+        android:layout_alignStart="@id/text_main_methodname"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:textColor="#ffffff"
+        android:onClick="chooseMethod"
+        android:clickable="true"
+        android:layout_toLeftOf="@+id/imageButton" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Time"
+        android:layout_below="@id/text_main_methoddesc"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/textView_time_label"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"/>
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="15dp"
+        android:layout_below="@id/textView_time_label"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/blue_delimiter"
+        android:scaleType="fitXY" />
+
+    <TimePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timepicker_main"
+        android:layout_below="@+id/textView_time_label"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        style="@style/MyWhiteTimePicker"
+        android:background="#384952" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/layout_chosemethod"
+        android:background="#122129"
+        android:visibility="gone"
+        android:padding="16dp">
+
+        <CheckedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/method_name_throw_and_catch"
+            android:id="@+id/checkedTextView_method1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:textSize="20dp"
+            android:checked="true"
+            android:clickable="true"
+            android:enabled="true"
+            android:textColor="#ffffff" />
+        <CheckedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/method_name_enter_code"
+            android:id="@+id/checkedTextView_method2"
+            android:textSize="20dp"
+            android:checked="false"
+            android:layout_below="@+id/checkedTextView_method1"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"
+            android:textColor="#ffffff" />
+        <CheckedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/method_name_shake"
+            android:id="@+id/checkedTextView_method3"
+            android:textSize="20dp"
+            android:checked="false"
+            android:layout_below="@+id/checkedTextView_method2"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"
+            android:textColor="#ffffff" />
+        <CheckedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/method_name_take_picture"
+            android:id="@+id/checkedTextView_method4"
+            android:textSize="20dp"
+            android:checked="false"
+            android:layout_below="@+id/checkedTextView_method3"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

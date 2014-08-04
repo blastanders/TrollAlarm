@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="C:\Users\Aaron\Desktop\TrollAlarm\app\build\intermediates\pre-dexed\debug\classes-4e0d765287f0706e510fc96360ab45750aef5891.jar"
+        jar="C:\Users\Aaron\Desktop\TrollAlarm\build\intermediates\exploded-aar\TrollAlarm\openCVLibrary249\unspecified\classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="b2db40602dacf93022367aec67dc8f70d3c4ca74"/>
+    <item
+        dex="C:\Users\Aaron\Desktop\TrollAlarm\app\build\intermediates\pre-dexed\debug\classes-0042011d13a7ba783369fce910a16e549e61103c.jar"
+        jar="C:\Users\Aaron\Desktop\TrollAlarm\build\intermediates\exploded-aar\com.android.support\appcompat-v7\19.1.0\classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="3499ceba05ca1f6037c6a2fad73df8f636224a28"/>
+    <item
+        dex="C:\Users\Aaron\Desktop\TrollAlarm\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0-e311e493b238b75da4095bd5ee7b69d76d73dc42.jar"
+        jar="C:\Program Files (x86)\Android\android-studio\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67"/>
+
+</pre-dex-items>
